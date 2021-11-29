@@ -1,0 +1,36 @@
+enablr
+vlan database
+vlan 2 name turismo
+exit
+configure terminal
+interface fastEthernet 0/10
+switchport mode access
+
+
+
+configure terminal hostname COLIMA
+
+configure terminal hostname COQUIMATLAN
+configure terminal enable password hola
+exit
+exit
+enable => contraseña hola
+
+
+//Conexion remota 
+
+configure terminal
+line vty 0 15
+ password hola
+ exit
+
+
+ asignar direccion ip a switch
+configure terminal
+interface vlan 1
+ip address 192.0.0.10 255.255.255.0
+no shutdown
+
+telnet 192.0.0.11 (el otro)
+password hola
+

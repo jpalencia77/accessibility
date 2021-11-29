@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#BEF781">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="./img/icono.png">
+    <link rel="apple-touch-icon" href="./img/icono.png">
+    <link rel="apple-touch-startup-image" href="./img/icono.png">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./style.css">
+    <title>Carrusel de imagenes</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="back boton">
+            <button onclick="back()">Ir atrás</button>
+        </div>
+
+        <div class="forward boton">
+            <button  onclick="forward()">Ir adelante</button>
+        </div>
+
+        <img src="img/imagen0.jpg" alt=" " id="fotos">
+
+    </div>
+
+
+
+    <div>
+        <form class="form-group " action="">
+
+            <label for="fnumId">id</label><br>
+            <input type="number" name="" id="fnumId" class="form-control" required<br>
+            
+            <label for="ftit">Titulo de la pelicula</label><br>
+            <input type="text" name="" id="ftit" class="form-control" required><br>
+   
+            <label for="fgen">Genero</label><br>
+            <input type="text" name="" id="fgen" class="form-control" required> <br>
+   
+            <label for="fprot">Protagonista</label><br>
+            <input type="text" name="" id="fprot" class="form-control" required> <br>
+
+            <label for="fyear">Año</label><br>
+            <input type="text" name="" id="fyear" class="form-control" required> <br>
+   
+            <label for="fmail">Correo</label><br>
+            <input type="email" name="" id="fmail" class="form-control" required><br>
+            <br>
+
+            <label for="fdate">Fecha de ingreso</label>
+            <input type="date" name="" id="fdate" class="form-control" required><br>
+            <br>
+
+           <div class="botones">
+            
+
+           
+            <button class="btn btn-success" id="addPe">Añadir Registro</button>
+            <button class="btn btn-danger" id="but2">Borrar registro</button>
+
+           </div>
+            
+
+
+
+        </form>
+
+        <div>
+            <table class="table" id="tbPelis">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Genero</th>
+                        <th>Protagonista</th>
+                        <th>Año</th>
+                        <th>Correo</th>
+                        <th>Fecha de ingreso</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./carrusel2.js"></script>
+    <script src="./addTabla.js"></script>
+    <script src="./tabTab.js"></script>
+
+
+
+
+    
+
+</body>
+
+</html>

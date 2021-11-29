@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://sistemas.cruzperez.com/forma.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Formulario</title>
+</head>
+<body>
+<script>
+
+var almacenamiento = [];
+
+function funcion()
+{ var form = document.getElementById('forma');
+  var data = new FormData(form);
+  almacenamiento.push(Object.fromEntries(data));
+  json=JSON.stringify(almacenamiento);
+  localStorage.setItem('almacenamiento', json);
+}
+</script>
+<form id="forma">
+  <label for="nombre">Nombre:</label><br>
+  <input type="text" id="nombre" name="nombre"><br>
+  <label for="apellido">Apellidos:</label><br>
+  <input type="text" id="apellido" name="apellido">
+  <input type="button" onclick="funcion()" value="Guardar">
+</form>
+
+</body></html>

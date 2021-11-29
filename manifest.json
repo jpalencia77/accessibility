@@ -1,0 +1,19 @@
+{
+    "name": "Carrusel de Jaime",
+  "short_name": "Carrusel de Jaime",
+  "description": "Este es mi carrusel de imagenes",
+  "background_color": "#2B2B2B",
+  "theme_color": "#F0DB4F",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./?utm_source=web_app_manifest",
+  "scope": "./",
+  "lang": "es-MX",
+  "icons": [
+    {
+      "src": "./img/icono.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+]
+}

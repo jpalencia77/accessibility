@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+
+    box-sizing: border-box;
+
+
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#but {
+  
+
+    text-align: center;
+
+
+
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
+}
+
+#but:hover {
+
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+}
+
+
+
+#but2 {
+   
+
+
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
+}
+
+#but2:hover {
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    height: 780px;
+}
+
+.boton {
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: #fff;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.boton:hover {
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+
+}
+
+.back {
+    left: 2%;
+    top: calc(50% - 70px);
+}
+
+.forward {
+    right: 2%;
+    top: calc(50% - 70px);
+}
